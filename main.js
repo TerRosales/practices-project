@@ -33,23 +33,36 @@ function createProjectDetails () {
         newProjectDetails.textContent = editTextArea;
     }
     })
+
+    var currentDate = new Date();
+    var dateString = currentDate.toDateString();
+    var timeString = currentDate.toLocaleDateString();
+
+    var dateTimeString = `Uploaded at ${dateString} on ${timeString}`;
+
+    newProjectDate = document.createElement('H5');
+    newProjectDate.innerHTML = dateTimeString;
+
+
+
     newDeleteButton = document.createElement('button');
     newDeleteButton.textContent = "Delete";
     newDeleteButton.addEventListener("click", function () {
         recieverPanel.removeChild(newProjectHeader);
         recieverPanel.removeChild(newProjectDetails);
+        recieverPanel.removeChild(newProjectDate);
         recieverPanel.removeChild(newDeleteButton);
         recieverPanel.removeChild(editButton);
     })
 
-
     recieverPanel.appendChild(newProjectHeader);
     recieverPanel.appendChild(newProjectDetails);
+    recieverPanel.appendChild(newProjectDate);
     recieverPanel.appendChild(newDeleteButton);
     recieverPanel.appendChild(editButton);
 
-    document.getElementById("titleArea").value = 'Enter your title...';
-    document.getElementById("textArea").value = 'Enter your text...';
+    document.getElementById("titleArea").value = ' ';
+    document.getElementById("textArea").value = ' ';
     } else {
         alert("Please Enter Project Specifications");
     };

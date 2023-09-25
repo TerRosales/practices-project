@@ -14,10 +14,10 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 35rem;
-    width: 20rem;
+    height: 25rem;
+    width: 40rem;
     background-color: rgba(50, 50, 50, 0.8);
-    margin-left: 35%;
+    margin-left: 25%;
     margin-top: 10%;
 }
 
@@ -74,6 +74,31 @@ p {
 h4 {
     font-size: 1.7rem;
     color: rgba(250, 70, 70, 0.7);
+}
+
+h5 {
+    color: white;
+    align-items: flex-end;
+    /* vertical-align: bottom;
+    display: table-cell; */
+}
+
+@media (max-width: 1024px) {
+    .control-panel, .reciever-panel {
+        margin-left: 15%;
+    }
+}
+
+@media (max-width: 768px) {
+    .control-panel, .reciever-panel {
+        margin-left: 8%;
+    }
+}
+
+@media (max-width: 550px) {
+    .control-panel, .reciever-panel {
+        margin-left: 1%;
+    }
 }
 
 
