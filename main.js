@@ -15,6 +15,7 @@ function createProjectDetails () {
     
     const recieverPanel = document.getElementById('recieverPanel');
 
+    if (titleArea !== "") {
     newH1 = document.createElement('H1');
     newH1.innerHTML = titleArea;
 
@@ -37,6 +38,9 @@ function createProjectDetails () {
 
     document.getElementById("titleArea").value = 'Enter your title...';
     document.getElementById("textArea").value = 'Enter your text...';
+    } else {
+        alert("Please Enter Project Specifications")
+    }
 }
 
 const groupAdd = document.getElementById("groupAdd");
