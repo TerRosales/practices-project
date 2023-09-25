@@ -57,13 +57,23 @@ h1 {
     margin-top: 10%;
 }
 
+button {
+    margin-bottom: 1rem;
+}
+
+
 p {
+    font-size: 1.2rem;
     color: white;
     border: 0.2rem outset rgba(100, 255, 200, 0.9);
     padding: auto;
     min-width: 30rem;  min-height: 10rem;
+    background-color: black;
 }
 
-
+h4 {
+    font-size: 1.7rem;
+    color: rgba(250, 70, 70, 0.7);
+}
 
 

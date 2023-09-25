@@ -16,31 +16,43 @@ function createProjectDetails () {
     const recieverPanel = document.getElementById('recieverPanel');
 
     if (titleArea !== "") {
-    newH1 = document.createElement('H1');
-    newH1.innerHTML = titleArea;
+    newProjectHeader = document.createElement('H4');
+    newProjectHeader.innerHTML = titleArea;
 
-    newP = document.createElement('P');
-    newP.innerHTML = textArea;
-
+    newProjectDetails = document.createElement('P');
+    newProjectDetails.innerHTML = textArea;
+    const editButton = document.createElement('button');
+    editButton.textContent = "Edit";
+    editButton.addEventListener("click", function() {
+    const editTitleArea = prompt('Edit Title', titleArea);
+    if (editTitleArea !== null) {
+        newProjectHeader.textContent = editTitleArea;
+    }
+    const editTextArea = prompt('Edit Description', textArea);
+    if (editTextArea !== null) {
+        newProjectDetails.textContent = editTextArea;
+    }
+    })
     newDeleteButton = document.createElement('button');
     newDeleteButton.textContent = "Delete";
     newDeleteButton.addEventListener("click", function () {
-        recieverPanel.removeChild(newH1);
-        recieverPanel.removeChild(newP);
+        recieverPanel.removeChild(newProjectHeader);
+        recieverPanel.removeChild(newProjectDetails);
         recieverPanel.removeChild(newDeleteButton);
+        recieverPanel.removeChild(editButton);
     })
 
 
-
-    recieverPanel.appendChild(newH1);
-    recieverPanel.appendChild(newP);
+    recieverPanel.appendChild(newProjectHeader);
+    recieverPanel.appendChild(newProjectDetails);
     recieverPanel.appendChild(newDeleteButton);
+    recieverPanel.appendChild(editButton);
 
     document.getElementById("titleArea").value = 'Enter your title...';
     document.getElementById("textArea").value = 'Enter your text...';
     } else {
-        alert("Please Enter Project Specifications")
-    }
+        alert("Please Enter Project Specifications");
+    };
 }
 
 const groupAdd = document.getElementById("groupAdd");
