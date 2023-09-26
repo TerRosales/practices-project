@@ -8,17 +8,25 @@
     <title>Practices</title>
 </head>
 <body>
-    <div class="container">
+    <div id="container" class="container">
     <div class="control-panel" id="controlPanel">
-        <h1 class="mainTitle">Control Field</h1>
+            <h1 class="mainTitle">Control Field</h1>
         <input type="text" id="titleArea" placeholder="Enter your title..." class="titleArea">
         <textarea id="textArea" placeholder="Enter your text..." class="textArea"></textarea>
         <button class="groupAdd" id="groupAdd">Add </button>
+        <div class="rules">
+            <h2>Rules</h2>
+            <p id="rules">Can Only Enter 2 max Project Ideas and Titles for now until I find a better way to initiate the necessary process.
+            </p>
+        </div>
     </div>
-    <div class="reciever-panel" id="recieverPanel">
+    <div class="reciever-main" id="recieverMain">
         <h1>Reciever Panel</h1>
+        <button id="deleteButton" class="deleteButton"><i class="fa-solid fa-trash"></i></button>
+    <div class="reciever-panel" id="recieverPanel"></div>
     </div>
     </div>
+<script defer src="https://kit.fontawesome.com/89ebcadf7b.js" crossorigin="anonymous"></script>
 <script src="main.js"></script>
 </body>
 </html>

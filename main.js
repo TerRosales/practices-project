@@ -71,9 +71,12 @@ function createProjectDetails () {
 const groupAdd = document.getElementById("groupAdd");
 groupAdd.addEventListener("click", createProjectDetails);
 
+const container = document.getElementById("container");
 
+const deleteButton = document.getElementById("deleteButton");
 
-
-
-
-
+deleteButton.addEventListener("click", () => {
+    while(recieverPanel.firstChild) {
+        recieverPanel.removeChild(recieverPanel.firstChild);
+    }
+});
