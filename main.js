@@ -1,3 +1,7 @@
+// reciever sticky tesst
+const revieverMain = document.getElementsByClassName("reciever-main");
+
+
 // ColorBox 1
 const colorBox = document.getElementById('color-box');
 const hexCode = document.getElementById('hex-code');
@@ -197,6 +201,9 @@ function createProjectDetails () {
     newProjectHeader.innerHTML = titleArea;
 
     newProjectDetails = document.createElement('P');
+    newProjectHeader.className = "addedTitle";
+    newProjectDetails.className = "addedDetails"
+
     newProjectDetails.innerHTML = textArea;
     const editButton = document.createElement('button');
     editButton.textContent = "Edit";
@@ -218,6 +225,7 @@ function createProjectDetails () {
     var dateTimeString = `Uploaded at ${dateString} on ${timeString}`;
 
     newProjectDate = document.createElement('H5');
+    newProjectDate.className = "addedTimeDate";
     newProjectDate.innerHTML = dateTimeString;
 
 
@@ -250,9 +258,9 @@ groupAdd.addEventListener("click", createProjectDetails);
 
 const container = document.getElementById("container");
 
-const deleteButton = document.getElementById("deleteButton");
+const deleteButton = document.getElementById("deleteAllButton");
 
-deleteButton.addEventListener("click", () => {
+deleteAllButton.addEventListener("click", () => {
     while(recieverPanel.firstChild) {
         recieverPanel.removeChild(recieverPanel.firstChild);
     }

@@ -15,7 +15,7 @@
         <button class="randomizeAll" id="randomizeAll" type="button">
             <i class="fa-solid fa-code-branch fa-xl"></i>
         </button>
-        <h2 id="colorizerID">Colorizer</h2>
+        <h2 id="colorizerID" class="colorizerTitle">Colorizer</h2>
         <div class="color-box" id="color-box">
             <input class="hexInput" type="text" id="hex-code" readonly>
             <button class="toggleLockButton" onclick="toggleLock()">
@@ -58,7 +58,7 @@
                 <i class="fa-solid fa-floppy-disk fa-2xl"></i>
             </button>
             <div class="rules">
-                <h2>Rules</h2>
+                <h2 class="rulesTitle">Rules</h2>
                     <p class="rules-text">You can only enter 2 max project Ideas and titles for now until I find a better way to initiate the necessary process. Keep In mind that this is to help you track what ideas you have in mind, help you build off those ideas without letting them get forgotten.
                 </p>
             </div>
@@ -67,9 +67,9 @@
 <!-- Entry Field Ends -->
 <!-- Reciever Field -->
     <div class="reciever-main" id="recieverMain">
-            <h1>Reciever Panel</h1>
-            <button id="deleteButton" class="deleteButton"><i class="fa-solid fa-trash fa-xl"></i></button>
-        <div class="reciever-panel" id="recieverPanel"></div>
+            <h2 class="recieverTitle">Reciever Panel</h2>
+            <button id="deleteAllButton" class="deleteAllButton"><i class="fa-solid fa-trash fa-xl"></i></button>
+        <div class="reciever-panel" id="recieverPanel" scrollable></div>
         </div>
 <!-- Reciever Field Ends -->
 <!-- Main Container Ends -->
