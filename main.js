@@ -1,3 +1,127 @@
+// ColorBox 1
+const colorBox = document.getElementById('color-box');
+const hexCode = document.getElementById('hex-code');
+let isLocked = false;
+
+
+function getRandomizedColor() {
+    const letters = "0123456789ABCDEF";
+    let color = "#";
+    for (let i = 0; i < 6 ; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+};
+
+function toggleLock(){
+    isLocked = !isLocked;
+    const lockButton = colorBox.querySelector("button:nth-child(2)")
+    lockButton.textContent = isLocked ? "Lock" : "Unlock";
+}
+
+function setColor() {
+    if(!isLocked) {
+        const randomColor = getRandomizedColor();
+        colorBox.style.backgroundColor = randomColor;
+        hexCode.value = randomColor;
+    }
+}
+
+
+
+function randomizeColor() {
+    setColor();
+}
+
+setColor();
+
+// ColorBox 1 Ends
+
+// ColorBox 2
+const colorBox2 = document.getElementById('color-box-2');
+const hexCode2 = document.getElementById('hex-code-2');
+let isLocked2 = false;
+
+
+function getRandomizedColor2() {
+    const letters = "0123456789ABCDEF";
+    let color = "#";
+    for (let i = 0; i < 6 ; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+};
+
+function toggleLock2(){
+    isLocked2 = !isLocked2;
+    const lockButton2 = colorBox2.querySelector("button:nth-child(2)")
+    lockButton2.textContent = isLocked2 ? "Lock" : "Unlock";
+}
+
+function setColor2() {
+    if(!isLocked2) {
+        const randomColor2 = getRandomizedColor2();
+        colorBox2.style.backgroundColor = randomColor2;
+        hexCode2.value = randomColor2;
+    }
+}
+
+
+
+function randomizeColor2() {
+    setColor2();
+}
+
+setColor2();
+
+// ColorBox 2 Ends
+
+// ColorBox 3
+
+const colorBox3 = document.getElementById('color-box-3');
+const hexCode3 = document.getElementById('hex-code-3');
+let isLocked3 = false;
+
+
+function getRandomizedColor3() {
+    const letters = "0123456789ABCDEF";
+    let color = "#";
+    for (let i = 0; i < 6 ; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+};
+
+function toggleLock3(){
+    isLocked3 = !isLocked3;
+    const lockButton3 = colorBox3.querySelector("button:nth-child(2)")
+    lockButton3.textContent = isLocked3 ? "Lock" : "Unlock";
+}
+
+function setColor3() {
+    if(!isLocked3) {
+        const randomColor3 = getRandomizedColor3();
+        colorBox3.style.backgroundColor = randomColor3;
+        hexCode3.value = randomColor3;
+    }
+}
+
+
+
+function randomizeColor3() {
+    setColor3();
+}
+
+setColor3();
+
+
+// ColorBox 3 Ends
+
+
+
+// -------------------------------------------------------------
+// My Mistake
+
 // const groupAdd = document.getElementById("groupAdd");
 // groupAdd.addEventListener("click", makeGroup);
 
@@ -8,6 +132,8 @@
 //     recieverPanel.appendChild(newH1);
 // }
 
+// -------------------------------------------------------------
+// Project Title Field 
 function createProjectDetails () {
     var titleArea = document.getElementById("titleArea").value;
     var textArea = document.getElementById("textArea").value;
@@ -36,7 +162,7 @@ function createProjectDetails () {
 
     var currentDate = new Date();
     var dateString = currentDate.toDateString();
-    var timeString = currentDate.toLocaleDateString();
+    var timeString = currentDate.toLocaleTimeString();
 
     var dateTimeString = `Uploaded at ${dateString} on ${timeString}`;
 

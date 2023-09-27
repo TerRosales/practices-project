@@ -8,9 +8,46 @@
     <title>Practices</title>
 </head>
 <body>
+<!-- Main Container -->
     <div id="container" class="container">
+<!-- Color Randomizer -->
+    <div class="colorizer" id="colorizer">
+        <h2 id="colorizerID">Colorizer</h2>
+        <div class="color-box" id="color-box">
+            <input class="hexInput" type="text" id="hex-code" readonly>
+            <button class="toggleLockButton" onclick="toggleLock()">
+                Unlock / Lock
+            </button>
+            <button class="randomizeButton" onclick="randomizeColor()">
+                <i class="fa-solid fa-shuffle"></i>
+            </button>
+        </div>
+        <!--Color Box 1 Ends  -->
+        <div class="color-box" id="color-box-2">
+            <input class="hexInput" type="text" id="hex-code-2" readonly>
+            <button class="toggleLockButton"  id="lockButton2" onclick="toggleLock2()">
+                Unlock / Lock
+            </button>
+            <button class="randomizeButton" onclick="randomizeColor2()">
+                <i class="fa-solid fa-shuffle"></i>
+            </button>
+        </div>
+        <!--Color Box 2 Ends  -->
+        <div class="color-box" id="color-box-3">
+            <input class="hexInput" type="text" id="hex-code-3" readonly>
+            <button class="toggleLockButton"  id="lockButton3" onclick="toggleLock3()">
+                Unlock / Lock
+            </button>
+            <button class="randomizeButton" onclick="randomizeColor3()">
+                <i class="fa-solid fa-shuffle"></i>
+            </button>
+        </div>
+        <!--Color Box 3 Ends  -->
+    </div>
+<!-- Color Randomizer End -->
+<!-- Entry Field -->
     <div class="control-panel" id="controlPanel">
-            <h1 class="mainTitle">Control Field</h1>
+            <h2 class="mainTitle">Control Field</h2>
         <input type="text" id="titleArea" placeholder="Enter your title..." class="titleArea">
         <textarea id="textArea" placeholder="Enter your text..." class="textArea"></textarea>
         <button class="groupAdd" id="groupAdd">Add </button>
@@ -20,11 +57,15 @@
             </p>
         </div>
     </div>
+<!-- Entry Field Ends -->
+<!-- Reciever Field -->
     <div class="reciever-main" id="recieverMain">
-        <h1>Reciever Panel</h1>
-        <button id="deleteButton" class="deleteButton"><i class="fa-solid fa-trash"></i></button>
-    <div class="reciever-panel" id="recieverPanel"></div>
-    </div>
+            <h1>Reciever Panel</h1>
+            <button id="deleteButton" class="deleteButton"><i class="fa-solid fa-trash"></i></button>
+        <div class="reciever-panel" id="recieverPanel"></div>
+        </div>
+<!-- Reciever Field Ends -->
+<!-- Main Container Ends -->
     </div>
 <script defer src="https://kit.fontawesome.com/89ebcadf7b.js" crossorigin="anonymous"></script>
 <script src="main.js"></script>
