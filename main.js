@@ -1,7 +1,3 @@
-// reciever sticky tesst
-const revieverMain = document.getElementsByClassName("reciever-main");
-
-
 // ColorBox 1
 const colorBox = document.getElementById('color-box');
 const hexCode = document.getElementById('hex-code');
