@@ -74,7 +74,7 @@ body {
 
 .hexInput {
     background-color: black;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 800;
     color: white;
     margin-top: 0.8rem;
@@ -116,7 +116,7 @@ body {
 .control-main {
     margin: 2rem;
     background-color: var(--colors-dim);
-    height: 30rem; width: 35rem;
+    height: 40rem; width: 35rem;
     padding: 2rem;
     justify-content: center;
     border: 0.1rem outset var(--colors30);
@@ -128,7 +128,7 @@ body {
 }
 
 .rules {
-
+    
 }
 
 .rules-text {
@@ -146,15 +146,16 @@ h1 {
 }
 
 .mainTitle {
-
+    margin-top: 0;
 }
 
 .titleArea {
-
+    margin-bottom: 1.5rem;
 }
 
 .textArea {
-
+    height: 12rem;
+    margin-bottom: 1.5rem;
 }
 
 
