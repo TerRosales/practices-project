@@ -63,7 +63,8 @@ body {
 
 .colorizer {
     border-radius: 0.8rem;
-    margin: 2rem;
+    margin: 1rem;
+    margin-top: 2rem;
     background-color: var(--colors-dim);
     display: flex;
     height: 25rem; width: 35rem;
@@ -127,7 +128,7 @@ button {
 }
 
 .deleteAllButton {
-    margin-left: 18.5rem;
+    margin-left: 20rem;
     height: 2.3rem; width: 3.5rem;
     border: 3px outset white;
     color: var(--colors60-dim);
@@ -153,7 +154,7 @@ button {
 
 .control-main {
     transform: translateY(-18.5rem);
-    margin: 2rem;
+    margin: 1rem;
     background-color: var(--colors-dim);
     height: 43rem; width: 35rem;
     padding: 2rem;
@@ -182,9 +183,14 @@ button {
     border: 0.1rem outset var(--colors30);
 }
 
-.rulesTitle, .addedTitle {
+.addedTitle {
     text-align: center;
     color: var(--colors10);
+}
+
+.rulesTitle {
+    text-align: center;
+    color: var(--colors30);
 }
 
 .rules-text{
@@ -211,10 +217,10 @@ button {
     /* margin-bottom: 20rem; */
     position: sticky;
     top: 2rem;
-    margin: 2rem;
+    margin: 1rem;
     padding: 2rem;
     background-color: var(--colors-dim);
-    height: 40rem; width: 45rem;
+    height: 41rem; width: 51rem;
     /* padding: 2rem; */
     justify-content: center;
     border: 0.1rem outset var(--colors30);
