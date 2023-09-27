@@ -114,8 +114,59 @@ function randomizeColor3() {
 
 setColor3();
 
-
 // ColorBox 3 Ends
+
+let isBoxLocked = true;
+
+function getAllRandomColor() {
+    const letters = "0123456789ABCDEF";
+    let color = "#";
+    for (let i = 0; i < 6 ; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+};
+
+document.getElementById("randomizeAll").addEventListener("click", function() {
+
+    if (!isLocked, !isLocked2, !isLocked3) {
+
+        const colorBoxOne = document.getElementById("color-box");
+        const colorBoxTwo = document.getElementById("color-box-2");
+        const colorBoxThree = document.getElementById("color-box-3");
+
+
+        colorBoxOne.style.backgroundColor = getAllRandomColor();
+
+        colorBoxTwo.style.backgroundColor = getAllRandomColor();
+
+        colorBoxThree.style.backgroundColor = getAllRandomColor();
+
+        toggleLock();
+        toggleLock2();
+        toggleLock3();
+    }
+    // } else if (){
+
+    // } else if (){
+
+    // } else if (){
+
+    // }else ()
+        
+});
+        // Original
+        // const colorBoxOne = document.getElementById("color-box");
+        // const colorBoxTwo = document.getElementById("color-box-2");
+        // const colorBoxThree = document.getElementById("color-box-3");
+
+
+
+        // colorBoxOne.style.backgroundColor = getAllRandomColor();
+
+        // colorBoxTwo.style.backgroundColor = getAllRandomColor();
+
+        // colorBoxThree.style.backgroundColor = getAllRandomColor();
 
 
 

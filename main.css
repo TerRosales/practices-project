@@ -1,5 +1,6 @@
 :root {
     --colors60: rgba(255, 255, 255, 1);
+    --colors60-dim: rgba(255, 255, 255, 0.9);
     --colors30: rgba(5, 5, 5, 0.9);
     --colors10: rgba(255, 250, 0, 0.9);
     --colors-dim: rgba(230, 230, 230, 0.7);
@@ -7,12 +8,12 @@
 
 
 i {
+    left: 5%;
     transition: all 0.2 ease-in-out;
-    width: 50px;
-    color: var(--colors60);
+    color: var(--colors60-dim);
 }
 i:hover {
-    color: var(--colors10);
+    color: var(--colors60);
 }
 
 *, *::before, *::after {
@@ -39,13 +40,15 @@ body {
     position: absolute;
 }
 
-.colorizer {border-radius: 0.8rem;
-    margin: 8rem;
+.colorizer {
+    border-radius: 0.8rem;
+    margin: 2rem;
     background-color: var(--colors-dim);
     display: flex;
-    height: 30rem; width: 35rem;
-    padding: 1.5rem;
+    height: 27rem; width: 35rem;
+    padding: 0.8rem;
     justify-content: center;
+    border: 0.1rem outset var(--colors30);
 }
 
 .color-box {
@@ -53,6 +56,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border: 0.1rem outset var(--colors30);
     border-radius: 0.8rem;
     width: 10rem; min-width: 7rem;
     height: 15rem;
@@ -68,49 +72,70 @@ body {
     margin-left: 0.8rem;
 }
 
-.toggleLockButton, .randomizeButton {
-    margin-top: 1.5rem;
-    height: 2.3rem; width: 4.5rem;
-    border: 3px outset white;
-    color: var(--colors60);
-    background-color: var(--colors30);
-}
-
 .hexInput {
     background-color: black;
     font-size: 1.2rem;
     font-weight: 800;
     color: white;
     margin-top: 0.8rem;
-    max-width: 10rem; width: 7rem;
+    max-width: 7rem; width: 6rem;
 }
 
-.toggleLockButton {
-
+.toggleLockButton, .randomizeButton {
+    margin-top: 1.5rem;
+    height: 2.3rem; width: 3.5rem;
+    border: 3px outset white;
+    color: var(--colors60-dim);
+    background-color: var(--colors30);
 }
 
-.randomizeButton {
-
+.randomizeAll {
+    margin-top: 3.6rem;
+    position: absolute;
+    height: 2.3rem; width: 3.5rem;
+    border: 3px outset white;
+    color: var(--colors60);
+    background-color: var(--colors30);
 }
 
-.color-box-2 {
-
+.toggleLockButton:hover, .randomizeButton:hover, .randomizeAll:hover, .groupAdd:hover {
+    height: 2.4rem; width: 3.6rem;
+    border: 3px outset white;
+    color: var(--colors60);
+    background-color: var(--colors30);
 }
 
-.color-box-3 {
+.groupAdd {
+    margin-left: 14rem;
+    height: 2.3rem; width: 3.5rem;
+    border: 3px outset white;
+    color: var(--colors60);
+    background-color: var(--colors30);
+}
 
+.control-main {
+    margin: 2rem;
+    background-color: var(--colors-dim);
+    height: 30rem; width: 35rem;
+    padding: 2rem;
+    justify-content: center;
+    border: 0.1rem outset var(--colors30);
+    border-radius: 0.8rem;
 }
 
 .control-panel {
-
+    display: grid;
 }
 
 .rules {
 
 }
 
-#rules {
-
+.rules-text {
+    padding: 1rem;
+    width: auto; height: 10rem;
+    background-color: rgba(255, 5, 5, 0.3);
+    border-radius: 0.8rem;
 }
 
 h1 {
@@ -120,17 +145,18 @@ h1 {
 
 }
 
+.mainTitle {
+
+}
+
+.titleArea {
+
+}
+
 .textArea {
 
 }
 
-.groupAdd, button {
-
-}
-
-.groupAdd:hover, button:hover {
-
-}
 
 .reciever-panel {
 
@@ -160,26 +186,20 @@ h4, h2 {
 h5 {
 }
 
+@media (max-width: 1440px) {
+    
+}
+
 @media (max-width: 1024px) {
-    /* .container {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-    } */
-    .control-panel, .reciever-panel {
-        margin-left: 15%;
-    }
+
 }
 
 @media (max-width: 768px) {
-    .control-panel, .reciever-panel {
-        margin-left: 8%;
-    }
+
 }
 
 @media (max-width: 550px) {
-    .control-panel, .reciever-panel {
-        margin-left: 1%;
-    }
+ 
 }
 
 

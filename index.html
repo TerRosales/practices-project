@@ -12,6 +12,9 @@
     <div id="container" class="container">
 <!-- Color Randomizer -->
     <div class="colorizer" id="colorizer">
+        <button class="randomizeAll" id="randomizeAll" type="button">
+            <i class="fa-solid fa-code-branch fa-xl"></i>
+        </button>
         <h2 id="colorizerID">Colorizer</h2>
         <div class="color-box" id="color-box">
             <input class="hexInput" type="text" id="hex-code" readonly>
@@ -19,7 +22,7 @@
                 Unlock / Lock
             </button>
             <button class="randomizeButton" onclick="randomizeColor()">
-                <i class="fa-solid fa-shuffle"></i>
+                <i class="fa-solid fa-shuffle fa-xl"></i>
             </button>
         </div>
         <!--Color Box 1 Ends  -->
@@ -29,7 +32,7 @@
                 Unlock / Lock
             </button>
             <button class="randomizeButton" onclick="randomizeColor2()">
-                <i class="fa-solid fa-shuffle"></i>
+                <i class="fa-solid fa-shuffle fa-xl"></i>
             </button>
         </div>
         <!--Color Box 2 Ends  -->
@@ -39,29 +42,33 @@
                 Unlock / Lock
             </button>
             <button class="randomizeButton" onclick="randomizeColor3()">
-                <i class="fa-solid fa-shuffle"></i>
+                <i class="fa-solid fa-shuffle fa-xl"></i>
             </button>
         </div>
         <!--Color Box 3 Ends  -->
     </div>
 <!-- Color Randomizer End -->
 <!-- Entry Field -->
-    <div class="control-panel" id="controlPanel">
+    <div class="control-main">
+        <div class="control-panel" id="controlPanel">
             <h2 class="mainTitle">Control Field</h2>
-        <input type="text" id="titleArea" placeholder="Enter your title..." class="titleArea">
-        <textarea id="textArea" placeholder="Enter your text..." class="textArea"></textarea>
-        <button class="groupAdd" id="groupAdd">Add </button>
-        <div class="rules">
-            <h2>Rules</h2>
-            <p id="rules">Can Only Enter 2 max Project Ideas and Titles for now until I find a better way to initiate the necessary process.
-            </p>
+            <input type="text" id="titleArea" placeholder="Enter your title..." class="titleArea">
+            <textarea id="textArea" placeholder="Enter your text..." class="textArea"></textarea>
+            <button class="groupAdd" id="groupAdd">
+                <i class="fa-solid fa-floppy-disk fa-2xl"></i>
+            </button>
+            <div class="rules">
+                <h2>Rules</h2>
+                    <p class="rules-text">You can only enter 2 max project Ideas and titles for now until I find a better way to initiate the necessary process. Keep In mind that this is to help you track what ideas you have in mind, help you build off those ideas without letting them get forgotten.
+                </p>
+            </div>
         </div>
     </div>
 <!-- Entry Field Ends -->
 <!-- Reciever Field -->
     <div class="reciever-main" id="recieverMain">
             <h1>Reciever Panel</h1>
-            <button id="deleteButton" class="deleteButton"><i class="fa-solid fa-trash"></i></button>
+            <button id="deleteButton" class="deleteButton"><i class="fa-solid fa-trash fa-xl"></i></button>
         <div class="reciever-panel" id="recieverPanel"></div>
         </div>
 <!-- Reciever Field Ends -->
