@@ -227,6 +227,29 @@ button {
     border-radius: 0.8rem;
     overflow-y: scroll;
 }
+.reciever-main::-webkit-scrollbar{
+    width: 10px;
+    transition: all 0.5s ease-in;
+}
+
+      /* Track */
+.reciever-main::-webkit-scrollbar-track {
+    transition: all 0.5s ease-in;
+    background: var(--colors30-dim); 
+}
+
+      /* Handle */
+.reciever-main::-webkit-scrollbar-thumb {
+    transition: all 0.5s ease-in;
+    background: #888; 
+}
+
+      /* Handle on hover */
+.reciever-main::-webkit-scrollbar-thumb:hover {
+    transition: all 0.5s ease-in;
+    background: var(--colors10); 
+}
+
 
 .reciever-panel {
     padding: 1rem;
